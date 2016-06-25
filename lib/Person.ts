@@ -6,6 +6,9 @@ class Person{
   getName():string{
     return this.name;
   }
+  callbackTest(callback:Function) {
+    callback(true, "stringParam");
+  }
 }
 
 export = Person;
