@@ -1,1 +1,1 @@
-/// <reference path="../../lib/all.d.ts" />
+/// <reference path="../../typings/index.d.ts" />

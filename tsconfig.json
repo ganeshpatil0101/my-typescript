@@ -15,7 +15,6 @@
   ],
   "files": [
     "lib/Addition.ts",
-    "lib/all.d.ts",
     "lib/core.ts",
     "lib/my-typescript.ts",
     "lib/Person.ts",

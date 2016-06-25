@@ -1,3 +1,2 @@
-/// <reference path="./all.d.ts" />
-
+/// <reference path="../typings/index.d.ts" />
 export {MyLibrary} from './core';

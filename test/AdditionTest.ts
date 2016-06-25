@@ -1,5 +1,4 @@
-/// <reference path="../lib//all.d.ts" />
-
+/// <reference path="../typings/index.d.ts" />
 import * as chai from 'chai';
 import * as sinon from 'sinon';
 import Addition = require("../lib/Addition");

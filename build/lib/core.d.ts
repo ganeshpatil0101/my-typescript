@@ -1,4 +1,4 @@
-/// <reference path="../../lib/all.d.ts" />
+/// <reference path="../../typings/index.d.ts" />
 export interface IMyLibraryConfiguration {
     name: string;
 }
