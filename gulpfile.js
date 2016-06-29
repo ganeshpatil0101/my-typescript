@@ -47,15 +47,15 @@ gulp.task('definitions', shell.task([
 /**
  * Dev tasks
  */
-gulp.task('tsd:install', function (callback) {
-  tsd({
-    command: 'reinstall',
-    config: './tsd.json'
-  }, callback);
-});
-gulp.task('tsd', ['tsd:install'], shell.task([
-  'tsd link'
-]));
+// gulp.task('tsd:install', function (callback) {
+//   tsd({
+//     command: 'reinstall',
+//     config: './tsd.json'
+//   }, callback);
+// });
+// gulp.task('tsd', ['tsd:install'], shell.task([
+//   'tsd link'
+// ]));
 
 gulp.task('clean:tsd', function (cb) {
   del([
