@@ -14,7 +14,9 @@ var gulp        = require('gulp'),
     tsd         = require('gulp-tsd'),
     nodemon     = require('gulp-nodemon'),
     shell       = require('gulp-shell'),
-    istanbul    = require('gulp-istanbul');
+    istanbul    = require('gulp-istanbul'),
+    jshint      = require('gulp-jshint'),
+    stylish     = require('jshint-stylish');
 
 require('git-guppy')(gulp);
     
@@ -170,6 +172,13 @@ gulp.task('ci', function (cb) {
     'test',
     cb
   );
+});
+
+// JsLint task
+gulp.task('jslint', function() {
+  return gulp.src('./lib/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter(stylish));
 });
 
 /**
